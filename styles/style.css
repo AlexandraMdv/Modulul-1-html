@@ -1,3 +1,42 @@
+/* Style reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* End style reset */
+
 :root {
   --primary-color: #ff6c00;
   --text-white: #fff;
@@ -9,6 +48,25 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 130px 55px;
+}
+
+.header-container {
+  padding: 40px 55px;
+}
+
+.header-list .header-item {
+  display: inline;
+  margin-left: 40px;
+}
+
+.header-list .header-item:first-child {
+  margin-left: 0;
 }
 
 .header-link {
@@ -36,6 +94,10 @@ body {
   letter-spacing: 0.1em;
   color: var(--text-white);
   cursor: pointer;
+  padding: 12px 25px 12px 25px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: inherit;
 }
 
 .hero-section {
